@@ -1,1 +1,1 @@
-@copyright by becodemy 2023
+B2Bazar 2024 | All Rights Reserved
