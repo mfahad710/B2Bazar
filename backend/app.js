@@ -13,7 +13,7 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 app.use("/test", (req, res) => {
-  res.send("Hello world!");
+  res.send("B2Bazar Backend Running Successfully......");
 });
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
