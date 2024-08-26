@@ -15,13 +15,10 @@ const Hero = () => {
         <h1
           className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#3d3a3a] font-[600] capitalize`}
         >
-          Best Collection for <br /> home Decoration
+          A Platform for All<br /> your B2B Needs
         </h1>
         <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-          assumenda? Quisquam itaque <br /> exercitationem labore vel, dolore
-          quidem asperiores, laudantium temporibus soluta optio consequatur{" "}
-          <br /> aliquam deserunt officia. Dolorum saepe nulla provident.
+          Discover top-quality wholesale products at B2Bazar. Join today to connect with trusted suppliers <br /> and secure the best deals! <br />
         </p>
         <Link to="/products" className="inline-block">
             <div className={`${styles.button} mt-5`}>

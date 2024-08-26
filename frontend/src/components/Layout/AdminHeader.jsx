@@ -14,8 +14,10 @@ const AdminHeader = () => {
       <div>
         <Link to="/">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://b2bazar-bucket.s3.us-west-2.amazonaws.com/logoname3.png"
             alt=""
+            height={100}
+            width={200}
           />
         </Link>
       </div>
