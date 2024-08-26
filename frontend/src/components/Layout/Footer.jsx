@@ -15,12 +15,11 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#3AAFA9] text-black">
-      <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
+      <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-10 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
-            src="image/logoname.png"
+            src="https://b2bazar-bucket.s3.us-west-2.amazonaws.com/logoname.png"
             alt=""
-            style={{ filter: "brightness(0) invert(1)" }}
           />
           <br />
           <p>Discover top-quality wholesale products at B2Bazar. Join today to connect with trusted suppliers and secure the best deals!</p>
@@ -88,17 +87,9 @@ const Footer = () => {
       </div>
 
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-         text-center pt-2 text-[#FEFFFF] text-sm pb-8"
+        className="text-center pt-2 text-[#FEFFFF] text-md pb-8"
       >
-        <span>© 2024 B2Bazar. All rights reserved.</span>
-        <span>Terms · Privacy Policy</span>
-        <div className="sm:block flex items-center justify-center w-full">
-          <img
-            src=""
-            alt=""
-          />
-        </div>
+        <span>© 2024 B2Bazar · All rights reserved.</span>
       </div>
     </div>
   );
