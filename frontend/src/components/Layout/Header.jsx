@@ -79,7 +79,7 @@ const Header = ({ activeHeading }) => {
               className="absolute right-2 top-1.5 cursor-pointer"
             />
             {searchData && searchData.length !== 0 ? (
-              <div className="absolute min-h-[30vh] bg-slate-50 shadow-sm-2 z-[9] p-4">
+              <div className="absolute min-h-[30vh] bg-[#FEFFFF] shadow-sm-2 z-[9] p-4">
                 {searchData &&
                   searchData.map((i, index) => {
                     return (
@@ -101,7 +101,7 @@ const Header = ({ activeHeading }) => {
 
           <div className={`${styles.button}`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
-              <h1 className="text-[#fff] flex items-center">
+              <h1 className="text-[#FEFFFF] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
@@ -151,7 +151,7 @@ const Header = ({ activeHeading }) => {
                 onClick={() => setOpenWishlist(true)}
               >
                 <AiOutlineHeart size={30} color="rgb(255 255 255 / 83%)" />
-                <span className="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
+                <span className="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-[#FEFFFF] font-mono text-[12px] leading-tight text-center">
                   {wishlist && wishlist.length}
                 </span>
               </div>
@@ -166,7 +166,7 @@ const Header = ({ activeHeading }) => {
                   size={30}
                   color="rgb(255 255 255 / 83%)"
                 />
-                <span className="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
+                <span className="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-[#FEFFFF] font-mono text-[12px] leading-tight text-center">
                   {cart && cart.length}
                 </span>
               </div>
@@ -206,7 +206,7 @@ const Header = ({ activeHeading }) => {
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
         }
-      w-full h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
+      w-full h-[60px] bg-[#FEFFFF] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >
         <div className="w-full flex items-center justify-between">
           <div>
@@ -219,9 +219,11 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src="https://b2bazar-bucket.s3.us-west-2.amazonaws.com/logoname3.png"
                 alt=""
                 className="mt-3 cursor-pointer"
+                height={100}
+                width={200}
               />
             </Link>
           </div>
@@ -231,7 +233,7 @@ const Header = ({ activeHeading }) => {
               onClick={() => setOpenCart(true)}
             >
               <AiOutlineShoppingCart size={30} />
-              <span class="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px]  leading-tight text-center">
+              <span class="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-[#FEFFFF] font-mono text-[12px]  leading-tight text-center">
                 {cart && cart.length}
               </span>
             </div>
@@ -246,9 +248,9 @@ const Header = ({ activeHeading }) => {
         {/* header sidebar */}
         {open && (
           <div
-            className={`fixed w-full bg-[#0000005f] z-20 h-full top-0 left-0`}
+            className={`fixed w-full bg-[#17252A] z-20 h-full top-0 left-0`}
           >
-            <div className="fixed w-[70%] bg-[#fff] h-screen top-0 left-0 z-10 overflow-y-scroll">
+            <div className="fixed w-[70%] bg-[#FEFFFF] h-screen top-0 left-0 z-10 overflow-y-scroll">
               <div className="w-full justify-between flex pr-3">
                 <div>
                   <div
@@ -256,7 +258,7 @@ const Header = ({ activeHeading }) => {
                     onClick={() => setOpenWishlist(true) || setOpen(false)}
                   >
                     <AiOutlineHeart size={30} className="mt-5 ml-3" />
-                    <span class="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px]  leading-tight text-center">
+                    <span class="absolute right-0 top-0 rounded-full bg-[#17252A] w-4 h-4 top right p-0 m-0 text-[#FEFFFF] font-mono text-[12px]  leading-tight text-center">
                       {wishlist && wishlist.length}
                     </span>
                   </div>
@@ -277,7 +279,7 @@ const Header = ({ activeHeading }) => {
                   onChange={handleSearchChange}
                 />
                 {searchData && (
-                  <div className="absolute bg-[#fff] z-10 shadow w-full left-0 p-3">
+                  <div className="absolute bg-[#FEFFFF] z-10 shadow w-full left-0 p-3">
                     {searchData.map((i) => {
                       const d = i.name;
 
@@ -302,7 +304,7 @@ const Header = ({ activeHeading }) => {
               <Navbar active={activeHeading} />
               <div className={`${styles.button} ml-4 !rounded-[4px]`}>
                 <Link to="/shop-create">
-                  <h1 className="text-[#fff] flex items-center">
+                  <h1 className="text-[#FEFFFF] flex items-center">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
@@ -326,13 +328,13 @@ const Header = ({ activeHeading }) => {
                   <>
                     <Link
                       to="/login"
-                      className="text-[18px] pr-[10px] text-[#000000b7]"
+                      className="text-[18px] pr-[10px] text-[#17252A]"
                     >
                       Login /
                     </Link>
                     <Link
                       to="/sign-up"
-                      className="text-[18px] text-[#000000b7]"
+                      className="text-[18px] text-[#17252A]"
                     >
                       Sign up
                     </Link>
