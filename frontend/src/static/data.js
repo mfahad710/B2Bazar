@@ -76,8 +76,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Daily Surprise Offers",
-      Description: "Save up to 25% off",
+      title: "Trusted Supplier",
+      Description: "We connect you with verified suppliers",
       icon: (
         <svg
           width="32"
