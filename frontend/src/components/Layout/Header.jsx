@@ -102,7 +102,7 @@ const Header = ({ activeHeading }) => {
           <div className={`${styles.button}`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
               <h1 className="text-[#FEFFFF] flex items-center">
-                {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
+                {isSeller ? "Go Dashboard" : "Register Yourself"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
             </Link>
@@ -305,7 +305,7 @@ const Header = ({ activeHeading }) => {
               <div className={`${styles.button} ml-4 !rounded-[4px]`}>
                 <Link to="/shop-create">
                   <h1 className="text-[#FEFFFF] flex items-center">
-                    Become Seller <IoIosArrowForward className="ml-1" />
+                    Register Yourself <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
               </div>
@@ -320,7 +320,7 @@ const Header = ({ activeHeading }) => {
                       <img
                         src={`${user.avatar?.url}`}
                         alt=""
-                        className="w-[60px] h-[60px] rounded-full border-[3px] border-[#0eae88]"
+                        className="w-[60px] h-[60px] rounded-full border-[3px] border-[#3AAFA9]"
                       />
                     </Link>
                   </div>

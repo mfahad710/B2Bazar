@@ -60,19 +60,19 @@ const ShopCreate = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Register as a seller
+        <h2 className="mt-6 text-center text-3xl font-extrabold text-[#17252A]">
+          Register your Business as a Manufacturer
         </h2>
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-[35rem]">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-[#FEFFFF] py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-[#17252A]"
               >
-                Shop Name
+                Registered Name of your Business
               </label>
               <div className="mt-1">
                 <input
@@ -91,7 +91,7 @@ const ShopCreate = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Phone Number
+                Mobile
               </label>
               <div className="mt-1">
                 <input
@@ -215,9 +215,9 @@ const ShopCreate = () => {
                 </span>
                 <label
                   htmlFor="file-input"
-                  className="ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                  className="ml-5 flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-[#FEFFFF] hover:bg-gray-50"
                 >
-                  <span>Upload a file</span>
+                  <span>Upload Photo</span>
                   <input
                     type="file"
                     name="avatar"
@@ -232,14 +232,14 @@ const ShopCreate = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-[#FEFFFF] bg-[#3AAFA9] hover:bg-[#17252A]"
               >
-                Submit
+                Register
               </button>
             </div>
             <div className={`${styles.noramlFlex} w-full`}>
               <h4>Already have an account?</h4>
-              <Link to="/shop-login" className="text-blue-600 pl-2">
+              <Link to="/shop-login" className="text-[#3AAFA9] pl-2">
                 Sign in
               </Link>
             </div>
