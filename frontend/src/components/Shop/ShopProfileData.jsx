@@ -30,16 +30,16 @@ const ShopProfileData = ({ isOwner }) => {
           <div className="flex items-center" onClick={() => setActive(1)}>
             <h5
               className={`font-[600] text-[20px] ${
-                active === 1 ? "text-red-500" : "text-[#333]"
+                active === 1 ? "text-[#2B7A78]" : "text-black"
               } cursor-pointer pr-[20px]`}
             >
-              Shop Products
+              Products
             </h5>
           </div>
           <div className="flex items-center" onClick={() => setActive(2)}>
             <h5
               className={`font-[600] text-[20px] ${
-                active === 2 ? "text-red-500" : "text-[#333]"
+                active === 2 ? "text-[#2B7A78]" : "text-black"
               } cursor-pointer pr-[20px]`}
             >
               Running Events
@@ -49,10 +49,10 @@ const ShopProfileData = ({ isOwner }) => {
           <div className="flex items-center" onClick={() => setActive(3)}>
             <h5
               className={`font-[600] text-[20px] ${
-                active === 3 ? "text-red-500" : "text-[#333]"
+                active === 3 ? "text-[#2B7A78]" : "text-black"
               } cursor-pointer pr-[20px]`}
             >
-              Shop Reviews
+              Reviews
             </h5>
           </div>
         </div>
@@ -61,7 +61,7 @@ const ShopProfileData = ({ isOwner }) => {
             <div>
               <Link to="/dashboard">
                 <div className={`${styles.button} !rounded-[4px] h-[42px]`}>
-                  <span className="text-[#fff]">Go Dashboard</span>
+                  <span className="text-[#FEFFFF]">Go Dashboard</span>
                 </div>
               </Link>
             </div>
@@ -115,8 +115,8 @@ const ShopProfileData = ({ isOwner }) => {
                     <h1 className="font-[600] pr-2">{item.user.name}</h1>
                     <Ratings rating={item.rating} />
                   </div>
-                  <p className="font-[400] text-[#000000a7]">{item?.comment}</p>
-                  <p className="text-[#000000a7] text-[14px]">{"2days ago"}</p>
+                  <p className="font-[400] text-[#17252A]">{item?.comment}</p>
+                  <p className="text-[#17252A] text-[14px]">{"2days ago"}</p>
                 </div>
               </div>
             ))}
