@@ -85,7 +85,7 @@ const AdminDashboardMain = () => {
         <div className="w-full p-4">
         <h3 className="text-[22px] font-Poppins pb-2">Overview</h3>
         <div className="w-full block 800px:flex items-center justify-between">
-          <div className="w-full mb-4 800px:w-[30%] min-h-[20vh] bg-white shadow rounded px-2 py-5">
+          <div className="w-full mb-4 800px:w-[30%] min-h-[20vh] bg-[#FEFFFF] shadow rounded px-2 py-5">
             <div className="flex items-center">
               <AiOutlineMoneyCollect
                 size={30}
@@ -93,7 +93,7 @@ const AdminDashboardMain = () => {
                 fill="#00000085"
               />
               <h3
-                className={`${styles.productTitle} !text-[18px] leading-5 !font-[400] text-[#00000085]`}
+                className={`${styles.productTitle} !text-[18px] leading-5 !font-[400] text-[#17252A]`}
               >
                 Total Earning
               </h3>

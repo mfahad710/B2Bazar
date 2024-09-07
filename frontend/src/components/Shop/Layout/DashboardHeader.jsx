@@ -9,12 +9,14 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 const DashboardHeader = () => {
   const { seller } = useSelector((state) => state.seller);
   return (
-    <div className="w-full h-[80px] bg-white shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
+    <div className="w-full h-[80px] bg-[#FEFFFF] shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
         <Link to="/dashboard">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://b2bazar-bucket.s3.us-west-2.amazonaws.com/logoname3.png"
             alt=""
+            height={100}
+            width={200}
           />
         </Link>
       </div>
