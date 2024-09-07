@@ -58,41 +58,41 @@ const ShopInfo = ({ isOwner }) => {
           />
         </div>
         <h3 className="text-center py-2 text-[20px]">{data.name}</h3>
-        <p className="text-[16px] text-[#000000a6] p-[10px] flex items-center">
+        <p className="text-[16px] text-[#17252A] p-[10px] flex items-center">
           {data.description}
         </p>
       </div>
       <div className="p-3">
         <h5 className="font-[600]">Address</h5>
-        <h4 className="text-[#000000a6]">{data.address}</h4>
+        <h4 className="text-[#17252A]">{data.address}</h4>
       </div>
       <div className="p-3">
-        <h5 className="font-[600]">Phone Number</h5>
-        <h4 className="text-[#000000a6]">{data.phoneNumber}</h4>
+        <h5 className="font-[600]">Mobile</h5>
+        <h4 className="text-[#17252A]">{data.phoneNumber}</h4>
       </div>
       <div className="p-3">
         <h5 className="font-[600]">Total Products</h5>
-        <h4 className="text-[#000000a6]">{products && products.length}</h4>
+        <h4 className="text-[#17252A]">{products && products.length}</h4>
       </div>
       <div className="p-3">
-        <h5 className="font-[600]">Shop Ratings</h5>
-        <h4 className="text-[#000000b0]">{averageRating}/5</h4>
+        <h5 className="font-[600]">Ratings</h5>
+        <h4 className="text-[#17252A]">{averageRating}/5</h4>
       </div>
       <div className="p-3">
         <h5 className="font-[600]">Joined On</h5>
-        <h4 className="text-[#000000b0]">{data?.createdAt?.slice(0, 10)}</h4>
+        <h4 className="text-[#17252A]">{data?.createdAt?.slice(0, 10)}</h4>
       </div>
       {isOwner && (
         <div className="py-3 px-4">
            <Link to="/settings">
-           <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px]`}>
-            <span className="text-white">Edit Shop</span>
+           <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px] text-[#FEFFFF] bg-[#3AAFA9] hover:bg-[#17252A]`}>
+            <span className="text-[#FEFFFF]">Edit Profile</span>
           </div>
            </Link>
-          <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px]`}
+          <div className={`${styles.button} !w-full !h-[42px] !rounded-[5px] text-[#FEFFFF] bg-[#3AAFA9] hover:bg-[#17252A]`}
           onClick={logoutHandler}
           >
-            <span className="text-white">Log Out</span>
+            <span className="text-[#FEFFFF]">Log Out</span>
           </div>
         </div>
       )}
