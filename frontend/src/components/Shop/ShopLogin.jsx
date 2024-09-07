@@ -38,7 +38,7 @@ const ShopLogin = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Login to your shop
+          Login as Manufacturer
         </h2>
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -113,7 +113,7 @@ const ShopLogin = () => {
               <div className="text-sm">
                 <a
                   href=".forgot-password"
-                  className="font-medium text-blue-600 hover:text-blue-500"
+                  className="font-medium text-blue-600 hover:text-[#17252A]"
                 >
                   Forgot your password?
                 </a>
@@ -122,7 +122,7 @@ const ShopLogin = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-[#FEFFFF] bg-[#3AAFA9] hover:bg-[#17252A]"
               >
                 Submit
               </button>
