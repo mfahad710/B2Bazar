@@ -32,7 +32,7 @@ const AllSellers = () => {
   };
 
   const columns = [
-    { field: "id", headerName: "Seller ID", minWidth: 150, flex: 0.7 },
+    { field: "id", headerName: "ID", minWidth: 150, flex: 0.7 },
 
     {
       field: "name",
@@ -49,7 +49,7 @@ const AllSellers = () => {
     },
     {
       field: "address",
-      headerName: "Seller Address",
+      headerName: "Address",
       type: "text",
       minWidth: 130,
       flex: 0.7,
@@ -66,7 +66,7 @@ const AllSellers = () => {
         field: "  ",
         flex: 1,
         minWidth: 150,
-        headerName: "Preview Shop",
+        headerName: "Preview",
         type: "number",
         sortable: false,
         renderCell: (params) => {
@@ -85,7 +85,7 @@ const AllSellers = () => {
       field: " ",
       flex: 1,
       minWidth: 150,
-      headerName: "Delete Seller",
+      headerName: "Delete",
       type: "number",
       sortable: false,
       renderCell: (params) => {
@@ -115,7 +115,7 @@ const AllSellers = () => {
   return (
     <div className="w-full flex justify-center pt-5">
       <div className="w-[97%]">
-        <h3 className="text-[22px] font-Poppins pb-2">All Users</h3>
+        <h3 className="text-[22px] font-Poppins pb-2">All Manufacturers</h3>
         <div className="w-full min-h-[45vh] bg-[#FEFFFF] rounded">
           <DataGrid
             rows={row}
