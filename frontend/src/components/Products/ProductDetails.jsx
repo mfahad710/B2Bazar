@@ -113,7 +113,7 @@ const ProductDetails = ({ data }) => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#FEFFFF]">
       {data ? (
         <div className={`${styles.section} w-[90%] 800px:w-[80%]`}>
           <div className="w-full py-5">
@@ -152,10 +152,10 @@ const ProductDetails = ({ data }) => {
                 <p>{data.description}</p>
                 <div className="flex pt-3">
                   <h4 className={`${styles.productDiscountPrice}`}>
-                    {data.discountPrice}$
+                    {data.discountPrice}Rs
                   </h4>
                   <h3 className={`${styles.price}`}>
-                    {data.originalPrice ? data.originalPrice + "$" : null}
+                    {data.originalPrice ? data.originalPrice + "Rs" : null}
                   </h3>
                 </div>
 
