@@ -28,15 +28,14 @@ const Faq = () => {
     <div className={`${styles.section} my-8`}>
       <h2 className="text-3xl font-bold text-gray-900 mb-8">FAQ</h2>
       <div className="mx-auto space-y-4">
-        {/* single Faq */}
-
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">For Buyers:</h2>
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
             onClick={() => toggleTab(2)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What is your return policy?
+            How do I create an account?
             </span>
             {activeTab === 2 ? (
               <svg
@@ -71,10 +70,7 @@ const Faq = () => {
           {activeTab === 2 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
-                brief explanation of why you're returning the item.
+              Click on the "Sign Up" button on the homepage and follow the steps to register. You can sign up using your email address.
               </p>
             </div>
           )}
@@ -83,12 +79,12 @@ const Faq = () => {
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
-            onClick={() => toggleTab(3)}
+            onClick={() => toggleTab(2)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I track my order?
+            How do I place an order?
             </span>
-            {activeTab === 3 ? (
+            {activeTab === 2 ? (
               <svg
                 className="h-6 w-6 text-gray-500"
                 fill="none"
@@ -121,21 +117,18 @@ const Faq = () => {
           {activeTab === 3 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can track your order by clicking the tracking link in your
-                shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+              Select the product you want to buy and click "Add to Cart."
               </p>
             </div>
           )}
         </div>
-
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
             onClick={() => toggleTab(4)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I contact customer support?
+            What payment methods are available?
             </span>
             {activeTab === 4 ? (
               <svg
@@ -170,21 +163,18 @@ const Faq = () => {
           {activeTab === 4 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+              Cash on Delivery (COD) , Credit/Debit Cards
               </p>
             </div>
           )}
         </div>
-
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
             onClick={() => toggleTab(5)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Can I change or cancel my order?
+            Can I track my order?
             </span>
             {activeTab === 5 ? (
               <svg
@@ -219,22 +209,18 @@ const Faq = () => {
           {activeTab === 5 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Unfortunately, once an order has been placed, we are not able to
-                make changes or cancellations. If you no longer want the items
-                you've ordered, you can return them for a refund within 30 days
-                of delivery.
+              Yes, once your order is shipped, you will receive a tracking number via email or SMS. You can also track your order through your account dashboard.
               </p>
             </div>
           )}
         </div>
-
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
             onClick={() => toggleTab(6)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Do you offer international shipping?
+            What is the return policy?
             </span>
             {activeTab === 6 ? (
               <svg
@@ -269,19 +255,18 @@ const Faq = () => {
           {activeTab === 6 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Currently, we only offer shipping within the United States.
+              The return policy varies depending on the seller. Please check the product page for specific return conditions. However, most sellers offer a 7 to 14-day return period for unused items.
               </p>
             </div>
           )}
         </div>
-
         <div className="border-b border-gray-200 pb-4">
           <button
             className="flex items-center justify-between w-full"
             onClick={() => toggleTab(7)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What payment methods do you accept?
+            How do I cancel my order?
             </span>
             {activeTab === 7 ? (
               <svg
@@ -316,13 +301,325 @@ const Faq = () => {
           {activeTab === 7 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                We accept visa,mastercard,paypal payment method also we have
-                cash on delivery system.
+              You can cancel your order before it is shipped. Go to your order history, select the order, and click "Cancel." If the order has already been shipped, please refer to the return policy.
               </p>
             </div>
           )}
         </div>
+     </div>
+    
+                              {/* FOR SELLER */}
+    <div className={`${styles.section} my-8`}></div>
+    
+    <div className="mx-auto space-y-4">
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">For Manufacturer:</h2>
+      <div className="mx-auto space-y-4"></div>
+      <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(2)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            How do I become a Manufacturer ?
+            </span>
+            {activeTab === 2 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 2 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              Click on the "Register" button and fill out the registration form. Once approved, you can start listing your products.
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(3)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            Are there any fees to sell on B2Bazar?
+            </span>
+            {activeTab === 3 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 3 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              We charge a small commission on every sale you make. The commission percentage depends on the product category. There are no listing fees or setup costs.
+              </p>
+            </div>
+          )}
+        </div>
+
+
+        <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(4)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            How do I list a product?
+            </span>
+            {activeTab === 4 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 4 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              Log into your seller account.
+              Go to "Dashboard"  "Add New Product."
+              <br></br>
+              Fill in the required details such as product name, description, price, and images.
+              <br></br>
+              Submit your listing for approval.
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(5)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            What are the product listing guidelines?
+            </span>
+            {activeTab === 5 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 5 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              Sellers are required to list genuine products with clear images and accurate descriptions. Counterfeit or illegal products are strictly prohibited.
+              </p>
+            </div>
+          )}
+        </div> 
+
+        <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(6)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            How do I update my account information?
+            </span>
+            {activeTab === 5 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 6 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              Log in to your account and go to the "Account Settings" section to update your personal information, shipping address, and payment methods.
+              </p>
+            </div>
+          )}
+        </div>
+
+
+    </div>
+
+    {/* FOR CUSTOMER CARE */}
+    <div className={`${styles.section} my-8`}></div>
+
+    <div className="mx-auto space-y-4">
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">Customer Care:</h2>
+      <div className="mx-auto space-y-4"></div>
+      <div className="border-b border-gray-200 pb-4">
+          <button
+            className="flex items-center justify-between w-full"
+            onClick={() => toggleTab(2)}
+          >
+            <span className="text-lg font-medium text-gray-900">
+            How can I contact customer support?
+            </span>
+            {activeTab === 2 ? (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            )}
+          </button>
+          {activeTab === 2 && (
+            <div className="mt-4">
+              <p className="text-base text-gray-500">
+              You can reach our customer support team via:
+              <br></br>
+              Email: B2Bazar@gmail.com
+              <br></br>
+              Phone: 0321-1234567
+              <br></br>
+              <br></br>
+              We aim to respond to all inquiries within 24 hours.
+             </p>
+            </div>
+          )}
+        </div>
+
       </div>
+
     </div>
   );
 };
