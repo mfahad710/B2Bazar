@@ -85,10 +85,10 @@ const ProfileContent = ({ active }) => {
             <div className="relative">
               <img
                 src={`${user?.avatar?.url}`}
-                className="w-[150px] h-[150px] rounded-full object-cover border-[3px] border-[#3ad132]"
+                className="w-[150px] h-[150px] rounded-full object-cover border-[3px] border-[#3AAFA9]"
                 alt=""
               />
-              <div className="w-[30px] h-[30px] bg-[#E3E9EE] rounded-full flex items-center justify-center cursor-pointer absolute bottom-[5px] right-[5px]">
+              <div className="w-[30px] h-[30px] bg-[#FEFFFF] rounded-full flex items-center justify-center cursor-pointer absolute bottom-[5px] right-[5px]">
                 <input
                   type="file"
                   id="image"
@@ -152,7 +152,7 @@ const ProfileContent = ({ active }) => {
                 </div>
               </div>
               <input
-                className={`w-[250px] h-[40px] border border-[#3a24db] text-center text-[#3a24db] rounded-[3px] mt-8 cursor-pointer`}
+                className={`w-[250px] h-[40px] border bg-[#3AAFA9] hover:bg-[#17252A] text-center text-[#FEFFFF] rounded-[3px] mt-8 cursor-pointer`}
                 required
                 value="Update"
                 type="submit"
@@ -484,7 +484,7 @@ const ChangePassword = () => {
   };
   return (
     <div className="w-full px-5">
-      <h1 className="block text-[25px] text-center font-[600] text-[#000000ba] pb-2">
+      <h1 className="block text-[25px] text-center font-[600] text-[#17252A] pb-2">
         Change Password
       </h1>
       <div className="w-full">
@@ -523,7 +523,7 @@ const ChangePassword = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <input
-              className={`w-[95%] h-[40px] border border-[#3a24db] text-center text-[#3a24db] rounded-[3px] mt-8 cursor-pointer`}
+              className={`w-[95%] h-[40px] border bg-[#3AAFA9] hover:bg-[#17252A] text-center text-[#FEFFFF] rounded-[3px] mt-8 cursor-pointer`}
               required
               value="Update"
               type="submit"
@@ -592,8 +592,8 @@ const Address = () => {
   return (
     <div className="w-full px-5">
       {open && (
-        <div className="fixed w-full h-screen bg-[#0000004b] top-0 left-0 flex items-center justify-center ">
-          <div className="w-[35%] h-[80vh] bg-white rounded shadow relative overflow-y-scroll">
+        <div className="fixed w-full h-screen bg-[#17252A] top-0 left-0 flex items-center justify-center ">
+          <div className="w-[35%] h-[80vh] bg-[FEFFFF] rounded shadow relative overflow-y-scroll">
             <div className="w-full flex justify-end p-3">
               <RxCross1
                 size={30}
@@ -729,21 +729,21 @@ const Address = () => {
         </div>
       )}
       <div className="flex w-full items-center justify-between">
-        <h1 className="text-[25px] font-[600] text-[#000000ba] pb-2">
+        <h1 className="text-[25px] font-[600] text-[#17252A] pb-2">
           My Addresses
         </h1>
         <div
           className={`${styles.button} !rounded-md`}
           onClick={() => setOpen(true)}
         >
-          <span className="text-[#fff]">Add New</span>
+          <span className="text-[#FEFFFF]">Add New</span>
         </div>
       </div>
       <br />
       {user &&
         user.addresses.map((item, index) => (
           <div
-            className="w-full bg-white h-min 800px:h-[70px] rounded-[4px] flex items-center px-3 shadow justify-between pr-10 mb-5"
+            className="w-full bg-[#FEFFFF] h-min 800px:h-[70px] rounded-[4px] flex items-center px-3 shadow justify-between pr-10 mb-5"
             key={index}
           >
             <div className="flex items-center">
