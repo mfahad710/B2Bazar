@@ -293,7 +293,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(3)}
           >
-            Seller Information
+            Information
           </h5>
           {active === 3 ? (
             <div className={`${styles.active_indicator}`} />
