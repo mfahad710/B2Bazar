@@ -8,16 +8,16 @@ const Hero = () => {
       className={`relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       style={{
         backgroundImage:
-          "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-2.jpg)",
+          "url(https://wallpapercave.com/wp/wp8302903.jpg)",
       }}
     >
       <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
         <h1
-          className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[#17252A] font-[600] capitalize`}
+          className={`text-[35px] leading-[1.2] 800px:text-[60px] text-[white] font-[600] capitalize`}
         >
           A Platform for All<br /> your B2B Needs
         </h1>
-        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#17252A]">
+        <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[White]">
           Discover top-quality wholesale products at B2Bazar. Join today to connect with trusted suppliers <br /> and secure the best deals! <br />
         </p>
         <Link to="/products" className="inline-block">
