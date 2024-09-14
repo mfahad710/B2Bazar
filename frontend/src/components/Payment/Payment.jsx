@@ -415,12 +415,12 @@ const CartData = ({ orderData }) => {
     <div className="w-full bg-[#FEFFFF] rounded-md p-5 pb-8">
       <div className="flex justify-between">
         <h3 className="text-[16px] font-[400] text-[#17252A]">subtotal:</h3>
-        <h5 className="text-[18px] font-[600]">${orderData?.subTotalPrice}</h5>
+        <h5 className="text-[18px] font-[600]">Rs. {orderData?.subTotalPrice}</h5>
       </div>
       <br />
       <div className="flex justify-between">
         <h3 className="text-[16px] font-[400] text-[#17252A]">shipping:</h3>
-        <h5 className="text-[18px] font-[600]">${shipping}</h5>
+        <h5 className="text-[18px] font-[600]">Rs. {shipping}</h5>
       </div>
       <br />
       <div className="flex justify-between border-b pb-3">
@@ -428,7 +428,7 @@ const CartData = ({ orderData }) => {
         <h5 className="text-[18px] font-[600]">{orderData?.discountPrice? "Rs" + orderData.discountPrice : "-"}</h5>
       </div>
       <h5 className="text-[18px] font-[600] text-end pt-3">
-        ${orderData?.totalPrice}
+        Rs. {orderData?.totalPrice}
       </h5>
       <br />
     </div>
