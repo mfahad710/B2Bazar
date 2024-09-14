@@ -333,7 +333,7 @@ const PaymentInfo = ({
             ) : null}
           </div>
           <h4 className="text-[18px] pl-2 font-[600] text-[#17252A]">
-            Pay with Paypal
+            Pay with Crypto
           </h4>
         </div>
 
@@ -344,7 +344,7 @@ const PaymentInfo = ({
               className={`${styles.button} !bg-[#3AAFA9] hover:bg-[#17252A] text-[#FEFFFF] h-[45px] rounded-[5px] cursor-pointer text-[18px] font-[600]`}
               onClick={() => setOpen(true)}
             >
-              Pay Now
+              Connect Wallet
             </div>
             {open && (
               <div className="w-full fixed top-0 left-0 bg-[#17252A] h-screen flex items-center justify-center z-[99999]">
