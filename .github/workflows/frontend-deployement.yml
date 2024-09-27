@@ -27,6 +27,7 @@ jobs:
       - name: Build Frontend
         run: |
           cd frontend
+          unset CI
           npm run build
 
       # Copy build files to the server using rsync
