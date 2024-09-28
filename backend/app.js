@@ -6,10 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: [
-    // 'http://localhost:3000',
-    'https://b2bazar.live/',
-  ],
+  origin: [ 'https://b2bazar.live/', ],
   credentials: true
 }));
 
