@@ -1,0 +1,61 @@
+name: Deploy Backend to Server
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: SSH to server and delete old node_modules
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/repository/B2Bazar/backend
+            rm -rf node_modules
+
+      - name: Pull latest changes from Git
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/repository/B2Bazar
+            git checkout master
+            git pull origin master
+
+      - name: Install dependencies
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/repository/B2Bazar/backend
+            npm install --force
+
+      - name: Restart PM2 Service
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            pm2 restart all
