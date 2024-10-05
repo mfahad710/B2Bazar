@@ -6,12 +6,15 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: [ 'https://b2bazar.live/', ],
-  credentials: true
+  origin: 'https://b2bazar.live/',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use("/", (req, res) => {
   res.send("B2Bazar Backend Running Successfully......");
 });
