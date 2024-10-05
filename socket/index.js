@@ -4,13 +4,22 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server);
+const io = socketIO(server, {
+  cors: {
+    origin: "https://b2bazar.live",
+    methods: ["GET", "POST"],
+    credentials: true
+  }
+});
 
 require("dotenv").config({
   path: "./.env",
 });
 
-app.use(cors());
+app.use(cors({
+  origin: "https://b2bazar.live",
+  credentials: true
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
